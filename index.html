@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Nissrin 💌</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+      font-family: Arial;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #message {
+      margin-top: 40px;
+      font-size: 30px;
+      color: white;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the button ❤️</h2>
+  <button onclick="showMessage()">Open 💌</button>
+
+  <h1 id="message">You are my Valentine 💌 Nissrin</h1>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").classList.add("show");
+    }
+  </script>
+
+</body>
+</html>
